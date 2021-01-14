@@ -6,10 +6,12 @@
 profit=1000000
 spends=700000
 
-head_count=16
+
 if profit>spends:
     print("profit")
 else:
     print("lost")
 print(f"rentabelnost{profit/spends} ")
-print(f"profit na 1go 4eloveka {(profit-spends)/head_count}")
+if (profit/spends) > 0:
+    head_count = int(input("введите колличество работников:"))
+    print(f"profit na 1go 4eloveka {(profit-spends)/head_count}")
